@@ -1,0 +1,221 @@
+/* TODAS AS TELAS: 
+
+- reset, html e body;
+- aside (sidebar);
+- header;
+- menu hamburguer para mobile;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    background-color:#05002761;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*versão do aside apenas para mobile*/
+aside.sidebar {
+    position: fixed;
+    top: 0;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50px;
+    height: 100%;
+    padding: 0px 10px 30px 10px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.211);
+}
+
+aside.sidebar > img#logo-quadrado {
+    display: none;
+}
+
+aside.sidebar > nav {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.sidebar nav > a > button {
+    height: 40px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar nav > a > button > span {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0px 16px 0 2px;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.sidebar nav > a > button > span > span {
+    display: none;
+}
+
+.sidebar nav > button > span > a#icone {
+    display: block;
+}
+/* versão do aside apenas para mobile */
+
+hr.linha{
+    display: none;
+}
+
+i#home, i#person_add, i#lab_profile {
+    color: #290a4b;
+    height: 20px;
+    width: 20px;
+}  
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #62618C;
+    margin-left: 46px;
+    margin-right: 10px;
+    height: 52px;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 80%;
+} 
+
+header > div#campo-busca {
+    width: 50%;
+    margin-left: 5px;
+    
+}
+
+header > div#campo-busca > input {
+    width: 90%;
+    height: 32px;
+    border-radius: 10px 0px 0px 10px;
+    border: 0;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+header > a > span#perfil {
+    width: 30%;
+    margin: 0;
+    display:flex;
+}
+
+header > span#perfil > img {
+    height: 45px;
+}
+
+header > a > span#perfil > p {
+    display: none; 
+}
+
+header > hr#separador-header {
+    height: 70%;
+    margin: auto;
+    border: 1px solid white;
+}
+
+header > a > span {
+    background-color: transparent;
+    border: 0;
+    color: rgba(0, 0, 0, 0.866);
+    width: 25%;
+    margin: 3px;
+}
+
+header > a {
+    text-decoration: none;
+    margin: auto;
+}
+
+header > button#search-button {
+    background: #1c0b41;
+    position: relative;
+    right:4.5%;
+    height: 65%;
+    top: 18%;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+    color: white;
+    padding: 4px;
+}
+
+header > button#search-button:hover, header > button#search-button:active {
+    background: #261251aa;
+}
+
+/* versão do menu hamburguer apenas para mobile */
+.button-mobile {
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    background: #62618C;
+    color: white;
+    border: 0;
+    margin-left: -30px;
+    height: 52px;
+    width: 40px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+nav.menu-mobile {
+    display: none;
+}
+
+nav.menu-mobile-active {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b0120;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.menu-mobile-active > button, nav.menu-mobile-active > a > button {
+    background: transparent;
+    border: 0;
+    margin-bottom: 16px;
+    color: white;
+}
+
+nav.menu-mobile-active > a > button > span > span {
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+}
+/*versão do menu hamburguer para mobile*/
+
+

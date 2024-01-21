@@ -1,0 +1,355 @@
+main {
+    min-height: 590px;
+    width: 83%;
+    margin-left: 25px; 
+}
+
+section#cadastro {
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.218);
+}
+
+section#cadastro > div > p {
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color: rgba(8, 0, 50, 0.86);
+}
+
+section#cadastro > a > button {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border: 0;
+    padding: 8px 18px 8px 18px;
+    background-color: #247a3edb;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+section#cadastro > a > button:hover {
+    background-color: #2aaf54db;
+    transform:scale(1.03);
+}
+
+section#cadastro > table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+section#cadastro > table > thead > tr > th {
+    text-align: left;
+    font-weight: normal;
+    color:#18013e;
+
+}
+
+section#cadastro > table > thead > tr.separator-row > td > hr {
+    border: 1px solid;
+    color: #a5a4a4;
+}
+
+section#cadastro > table > tbody > tr > td {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.338);
+    padding: 5px;
+    word-break: break-all;
+    font-size: 15px;
+    text-align: right;
+}
+
+section#cadastro > table > thead > tr > th:nth-child(1), section#cadastro > table > tbody > tr > td:nth-child(1) {
+    text-align: left; 
+}
+
+section#cadastro > table > thead > tr > th:nth-child(2), section#cadastro > table > tbody > tr > td:nth-child(2) {
+    text-align: center; 
+}
+
+section#cadastro > table > thead > tr > th:nth-child(3), section#cadastro > table > tbody > tr > td:nth-child(3) {
+    text-align: center; 
+}
+
+section#cadastro > table > thead > tr > th:nth-child(4), section#cadastro > table > tbody > tr > td:nth-child(4) {
+    text-align: center; 
+}
+
+section#cadastro > table > thead > tr > th:nth-child(5), section#cadastro > table > tbody > tr > td:nth-child(5) {
+    text-align: center; 
+}
+
+section#cadastro > table > tbody > tr:hover td {
+    background-color: #4e2c7256;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::RESPONSIVIDADE:::::::::::::::::::::::::::::::::::::::::: */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 100px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    section#cadastro > a > button {
+        padding: 10px 25px 10px 25px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1366px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 120px;
+        width: 85%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 120px;
+        width: 85%;
+    }
+
+    section#cadastro > a > button {
+        padding: 10px 35px 10px 35px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1366px) and (max-width: 1680px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 280px;
+        width: 71%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 280px;
+        width: 72%;
+    }
+
+    section#cadastro {
+        width: 98.5%;
+    }
+
+    section#cadastro > a > button {
+        padding: 10px 45px 10px 45px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 400px;
+        width: 70%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 70%;
+    }
+
+    section#cadastro > a > button {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+   
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    }
+
+    header {
+        width: 62%;
+        margin-left: 400px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 62%;
+    }
+
+    section#cadastro > a > button {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+    }
+
+}

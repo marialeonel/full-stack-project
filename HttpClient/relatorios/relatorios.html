@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="../public/css/geral.css">
+    <link rel="stylesheet" href="relatorios.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../public/imagens/favicon.png" type="image/x-icon">
+</head>
+
+<script src="../services/Services.js"></script>
+<script src="../services/operations.js"></script>
+    <script type="text/javascript">
+      load();
+    </script>
+<body>
+    
+    <!--Versão do menu para Mobile-->
+    <nav class="menu-mobile" id="menu-mobile">
+        <button onclick="toggleMenu()">
+            <span>
+                <i class="material-symbols-outlined"> close</i>
+            </span>
+        </button>
+
+        <a href="../home/home.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> home </i>
+                        <span class="mobile-text">Home</span>
+                    </span>
+            </button>
+        </a>
+
+        <a href="../cadastro/cadastro.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> person_add </i>
+                        <span class="mobile-text">Cadastro</span>
+                    </span>
+            </button>
+        </a>
+
+        <a href="relatorios.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> lab_profile </i>
+                        <span class="mobile-text">Relatórios</span>
+                    </span>
+            </button>
+        </a>
+    </nav>
+      <!--Versão do menu para Mobile-->
+
+    <aside class="sidebar">
+        <img id="logo-quadrado" src="../public/imagens/logo-quadrado.png" alt="">
+        <nav>
+            <a href="../home/home.html">
+                <button>
+                        <span>
+                            <i id="home" class="material-symbols-outlined"> home </i>
+                            <span>Home</span>
+                        </span>
+                
+                </button>
+            </a>
+
+            <hr class="linha" width="95%">
+
+            <a href="../cadastro/cadastro.html">
+                <button>
+                        <span>
+                            <i id="person_add" class="material-symbols-outlined"> person_add </i>
+                            <span>Cadastro</span>
+                        </span>
+                </button>
+            </a>
+
+            <hr class="linha" width="95%">
+
+            <a href="../relatorios/relatorios.html">
+                <button>
+                        <span>
+                            <i id="lab_profile" class="material-symbols-outlined"> lab_profile </i>
+                            <span>Relatórios</span>
+                        </span>
+                </button>
+            </a>
+        </nav>
+    </aside>
+
+    <header>
+        <!--Botão para mobile-->
+        <button class="button-mobile" onclick="toggleMenu()">
+            <i class="material-symbols-outlined"> menu </i>
+        </button>
+        <!--Botão para mobile-->
+    
+        <div id="campo-busca">
+            <input type="search" placeholder="Pesquisar...">
+        </div>
+
+        <button id="search-button" onclick="searchByName()"><span class="material-symbols-outlined">search</span></button>
+
+        <a href="../perfil/perfil.html">
+            <span id="perfil">
+                <img src="../public/imagens/user-perfil.svg" alt="">
+                <p class="nome-user"></p>
+            </span>
+        </a>
+
+        <hr id="separador-header">
+        <a href="../login/login.html"><span>SAIR</span></a>
+    </header>
+
+    <main>
+        <section id="relatorio">
+            <p>Relatórios</p>
+
+            <div>
+                <p>NOME</p>
+                <hr width="95%">
+                <a href="../relatorio-lista/relatorio-lista.html"><span>Lista de usuário</span></a>
+                <hr width="95%">
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../public/javascripts/menu.js"></script>
+</body>
+</html>

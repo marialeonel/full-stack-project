@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="../public/imagens/favicon.png" type="image/x-icon">
+<body>
+    <main id="principal">
+        <div id="box-login">
+            
+            <div id="container">
+                <img src="../public/imagens/logo-oficial.png" alt="">
+                <br>
+                <label for="login">E-mail</label>
+                <br>
+                <input id="login" type="email" placeholder="user@dominio.com">
+                <p id="mensagem-login"></p>
+                <label for="senha">Senha</label>
+                <br>
+                <input id="senha" type="password" placeholder="* * * * * * * *">
+                <p id="mensagem-senha"></p>
+                <br>
+                <a id="link-acesso" href="">
+                    <input id="button" type="submit" value="ENTRAR" onclick="acessar(event)">
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../services/Services.js"></script>
+    <script src="acesso.js"></script>
+</body>
+</html>

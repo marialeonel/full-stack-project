@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color:#181b59c4;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#box-login {
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 569px;
+    height: 543px;
+    text-align: center;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.507);
+}
+
+#container {
+    position: relative;
+
+}
+
+#container > label {
+    position: absolute;
+    left:20%;
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.729);
+
+}
+
+img {
+    height: 163px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+#login {
+    width: 343px;
+    height: 52px;
+    background-color: rgba(169, 169, 169, 0.674);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(107, 13, 128, 0.14);
+    border: 1px solid rgba(0, 0, 0, 0.532);
+    padding-left: 10px;
+}
+
+p#mensagem-login, p#mensagem-senha {
+    margin: 10px 90px 0px 90px;
+    font-size: 11px;
+    color: red;
+}
+
+#senha {
+    width: 343px;
+    height: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.532);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: rgba(107, 13, 128, 0.136);
+    padding-left: 10px;
+}
+
+#button {
+    width: 353px;
+    height: 52px;
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.52px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+@media screen and (max-width: 600px) {
+    #box-login {
+        width: 469px;
+        height: 443px;
+    }
+
+    #login, #senha, #button {
+        width: 243px;
+        height: 42px;
+    }
+
+    img {
+        margin-top: 10px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 498px) {
+
+    img {
+        padding-top: 50px;
+        height: 130px;
+        padding-bottom: 10px;
+    }
+    #box-login {
+        width: 80vw;
+        height: 543px;
+    }
+
+    #login, #senha, #button {
+        width: 243px;
+        height: 42px;
+    }
+
+    p#mensagem-login, p#mensagem-senha {
+        margin: 5px 10px 0px 10px;
+        font-size: 10px;
+        color: red;
+    }
+
+}
+
+@media screen and (max-width: 379px) {
+
+    img {
+        padding-top: 30px;
+        height: 130px;
+    }
+    
+    #box-login {
+        width: 80vw;
+        height: 543px;
+    }
+
+    #login, #senha, #button {
+        width: 193px;
+        height: 42px;
+    }
+
+    p#mensagem-login, p#mensagem-senha {
+        margin: 5px 0px 0px 0px;
+        font-size: 9px;
+        color: red;
+    }
+
+}
+
+
+

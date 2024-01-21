@@ -1,0 +1,397 @@
+main {
+    min-height: 590px;
+    width: 85%;
+    margin-left: 21px; 
+}
+
+section#lista {
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.218);
+}
+
+section#lista > div > p {
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color: rgba(8, 0, 50, 0.86);
+    font-size: 14px;
+}
+
+section#lista > button#imprimir {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border: 0;
+    padding: 8px 18px 8px 18px;
+    background-color: #591918eb;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+section#lista > button#imprimir:hover {
+    background-color: #5c2c2cc3;
+    transform:scale(1.03);
+}
+
+section#lista > table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+section#lista > table > thead > tr.separator-row > td > hr {
+    border: 1px solid #a5a4a4;
+}
+
+section#lista > table > thead > tr > th {
+    text-align: left;
+    font-weight: normal;
+    color:#18013e;
+
+}
+
+section#lista > table > tbody > tr > td {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.338);
+    padding: 5px;
+    word-break: break-all;
+    font-size: 15px;
+    text-align: right;
+}
+
+section#lista > table > thead > tr > th:nth-child(1), section#lista > table > tbody > tr > td:nth-child(1) {
+    text-align: left; 
+}
+
+section#lista > table > thead > tr > th:nth-child(2), section#lista > table > tbody > tr > td:nth-child(2) {
+    text-align: center; 
+}
+
+section#lista > table > thead > tr > th:nth-child(3), section#lista > table > tbody > tr > td:nth-child(3) {
+    text-align: right; 
+}
+
+section#lista > table > tbody > tr:hover td {
+    background-color: #4e2c7256;
+}
+
+
+
+/*:::::::::::::::::::::::::::::::::::::RESPONSIVIDADE::::::::::::::::::::::::::::::::::::::::*/
+
+@media print {
+
+    aside.sidebar, header {
+        display: none;
+    }
+
+    section#lista {
+        box-shadow: 0 0 0;
+        width: 100%;
+    }
+
+    section#lista > button#imprimir {
+        display: none;
+    }
+
+    button.update-button, button.delete-button, button#btn-anterior, button#btn-posterior {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 70px;
+    }
+
+    header {
+        margin-left: 80px;
+        width: 85%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 80px;
+        width: 85%;
+    }
+
+    section#lista > button#imprimir {
+        padding: 10px 25px 10px 25px;
+        font-size: 14px;
+    }
+}
+
+ @media screen and (min-width:1024px) and (max-width: 1366px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 70px;
+    }
+
+    header {
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    header > hr#separador-header {
+        margin-left: 70px;
+    }
+
+    main {
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    section#lista > button#imprimir {
+        padding: 10px 35px 10px 35px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:1366px) and (max-width: 1680px) {
+    
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    section#lista > button#imprimir {
+        padding: 10px 45px 10px 45px;
+        font-size: 16px;
+
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 290px;
+        width: 72%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    header > hr#separador-header {
+        margin-left: 70px;
+    }
+
+    main {
+        margin-left: 290px;
+        width: 80%;
+    }
+
+    section#lista {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+    
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 330px;
+        width: 70.2%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    header > hr#separador-header {
+        margin-left: 100px;
+    }
+
+    main {
+        margin-left: 331px;
+        width: 70%;
+    }
+
+    section#lista > button#imprimir {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+   
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    }
+
+    header {
+        width: 64%;
+        margin-left: 400px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 63.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    header > hr#separador-header {
+        margin-left: 100px;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 64%;
+    }
+
+    section#lista > button#imprimir {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+    }
+}

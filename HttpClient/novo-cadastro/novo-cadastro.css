@@ -1,0 +1,502 @@
+header > a > span#perfil > p {
+    font-size: 16px;
+}
+
+main {
+    min-height: 590px;
+    width: 80%;
+    margin-left: 35px; 
+}
+
+section#novo-cadastro {
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.218);
+}
+
+section#novo-cadastro > div#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section#novo-cadastro > div#cabecalho > p {
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: rgba(8, 0, 50, 0.86);
+}
+
+section#novo-cadastro > div#cabecalho > div#marcador {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+section#camadas-cebola > div.camadas-form > h3 {
+    margin-left: 15px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-left: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+div#caixa-nome {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+div#caixas-idade-endereco {
+    margin-left: 5px;
+}
+
+div#caixas-email-senha {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+div#caixa-outros {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+section#camadas-cebola > div.camadas-form > div#caixa-nome, div#caixa-endereco, div#caixa-outros > p{
+    font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+}
+
+section#camadas-cebola > div input {
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(110, 110, 110, 0.104);
+    border: 2px solid rgba(0, 0, 0, 0.218);
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5px;
+}
+
+input#nome {
+    width: 95%;
+    height: 3.5vh;
+}
+
+input#idade {
+    width: 13%;
+    height: 3.5vh;
+}
+
+input#endereco {
+    width: 50%;
+    height: 3.5vh;
+}
+
+input#email {
+    width: 38%;
+    height: 3.5vh;
+}
+
+input#senha {
+    width: 28%;
+    height: 3.5vh;
+}
+
+label#label-idade {
+    margin: 5px 5px 0px 0px;
+}
+
+label#label-email {
+    margin: 5px;
+}
+
+input#outros {
+    width: 95%;
+    height: 3.5vh;
+}
+
+textarea {
+    width: 95%;
+    height: 8vh;
+    resize: vertical;
+    margin: 15px 0px 10px 7px;
+    border-radius: 8px;
+    background-color: rgba(110, 110, 110, 0.104);
+    border: 2px solid rgba(0, 0, 0, 0.218);
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 5px;
+} 
+
+p {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+section#novo-cadastro > div#btn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+section#novo-cadastro > div#btn > button {
+    margin-bottom: 15px;
+    border: 0;
+    padding: 8px 28px 8px 28px;
+    background-color: #247a3edb;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+section#novo-cadastro > div#btn > button:hover {
+    background-color: #18642f;
+    transform:scale(1.03);
+}
+
+
+
+/*::::::::::::::::::::::::::::::::::RESPONSIVIDADE::::::::::::::::::::::::::::::::::::::*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 100px;
+        width: 80%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 64.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 100px;
+        width: 80%;
+    }
+
+    input#endereco {
+        width: 63.5%;
+        height: 3.5vh;
+    }
+
+
+    section#novo-cadastro > div#btn > button {
+        padding: 8px 68px 8px 68px;
+    }
+
+    textarea {
+        height: 11vh;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1366px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 130px;
+        width: 80%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 64.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 130px;
+        width: 80%;
+    }
+
+    input#endereco {
+        width: 69%;
+    }
+
+    input#email{
+        width: 50%;
+    }
+
+    input#senha {
+        width: 33%;
+    }
+
+    section#novo-cadastro > div#btn > button {
+        padding: 8px 85px 8px 85px;
+        font-size: 15px;
+    }
+
+    textarea {
+        height: 11vh;
+    }
+
+}
+
+@media screen and (min-width:1366px) and (max-width: 1680px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 310px;
+        width: 75%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 64.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 310px;
+        width: 75%;
+    }
+
+    input#endereco {
+        width: 71%;
+    }
+    
+    input#email {
+        width: 55%;
+    }
+
+    input#senha {
+        width: 30%;
+    }
+
+    section#novo-cadastro {
+        width: 100%;
+    }
+
+    section#novo-cadastro > div#btn > button {
+        padding: 10px 110px 10px 110px;
+        font-size: 16px;
+    }
+
+    textarea {
+        height: 10vh;
+    }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 330px;
+        width: 70%;
+    }
+
+    header > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 64.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 330px;
+        width: 70%;
+    }
+
+    input#endereco {
+        width: 72%;
+        height: 3.5vh;
+    }
+
+    input#email {
+        width: 53%;
+    }
+
+    input#senha {
+        width: 33%;
+    }
+
+    section#novo-cadastro > div#btn > button {
+        padding: 10px 110px 10px 110px;
+        font-size: 16px;
+    }
+
+    textarea {
+        height: 10vh;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+   
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    }
+
+    header {
+        width: 70%;
+        margin-left: 400px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 26%;
+        left: 64.5%; 
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 70%;
+    }
+
+    input#endereco {
+        width: 73%;
+        height: 3.5vh;
+    }
+
+    input#email {
+        width: 56%;
+    }
+
+    input#senha {
+        width: 31%;
+    }
+
+    section#novo-cadastro > div#btn > button {
+        padding: 10px 110px 10px 110px;
+        font-size: 16px;
+    }
+
+} 
+

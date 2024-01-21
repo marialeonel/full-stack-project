@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo cadastro</title>
+    <link rel="stylesheet" href="../public/css/geral.css">
+    <link rel="stylesheet" href="../public/css/success_fail.css">
+    <link rel="stylesheet" href="novo-cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="../public/imagens/favicon.png" type="image/x-icon">
+</head>
+
+<script src="../services/Services.js"></script>
+<script src="../services/operations.js"></script>
+    <script type="text/javascript">
+      load();
+    </script>
+    
+<body>
+    <!--Versão do menu para Mobile-->
+    <nav class="menu-mobile" id="menu-mobile">
+        <button onclick="toggleMenu()">
+            <span>
+                <i class="material-symbols-outlined"> close</i>
+            </span>
+        </button>
+
+        <a href="../home/home.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> home </i>
+                        <span class="mobile-text">Home</span>
+                    </span>
+            </button>
+        </a>
+
+        <a href="../cadastro/cadastro.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> person_add </i>
+                        <span class="mobile-text">Cadastro</span>
+                    </span>
+            </button>
+        </a>
+
+        <a href="../relatorios/relatorios.html">
+            <button>
+                    <span>
+                        <i class="material-symbols-outlined"> lab_profile </i>
+                        <span class="mobile-text">Relatórios</span>
+                    </span>
+            </button>
+        </a>
+    </nav>
+      <!--Versão do menu para Mobile-->
+
+    <aside class="sidebar">
+        <img id="logo-quadrado" src="../public/imagens/logo-quadrado.png" alt="">
+        <nav>
+            <a href="../home/home.html">
+                <button>
+                        <span>
+                            <i id="home" class="material-symbols-outlined"> home </i>
+                            <span>Home</span>
+                        </span>
+                </button>
+            </a>
+
+            <hr class="linha" width="90%">
+
+            <a href="../cadastro/cadastro.html">
+                <button>
+                        <span>
+                            <i id="person_add" class="material-symbols-outlined"> person_add </i>
+                            <span>Cadastro</span>
+                        </span>
+                </button>
+            </a>
+
+            <hr class="linha" width="90%">
+
+            <a href="../relatorios/relatorios.html">
+                <button>
+                        <span>
+                            <i id="lab_profile" class="material-symbols-outlined"> lab_profile </i>
+                            <span>Relatórios</span>
+                        </span>
+                </button>
+            </a>
+        </nav>
+    </aside>
+    
+    <header>
+        <!--Botão para mobile-->
+        <button class="button-mobile" onclick="toggleMenu()">
+            <i class="material-symbols-outlined"> menu </i>
+        </button>
+        <!--Botão para mobile-->
+    
+        <div id="campo-busca">
+            <input type="search" placeholder="Pesquisar...">
+        </div>
+
+        <button id="search-button" onclick="searchByName()"><span class="material-symbols-outlined">search</span></button>
+
+        <a href="../perfil/perfil.html">
+            <span id="perfil">
+                <img src="../public/imagens/user-perfil.svg" alt="">
+                <p class="nome-user"></p>
+            </span>
+        </a>
+
+        <hr id="separador-header">
+        <a href="../login/login.html"><span>SAIR</span></a>
+    </header>
+
+    <main>
+        <section id="novo-cadastro">
+            <div id="cabecalho">
+                <p>Novo cadastro</p>
+
+                <div id="marcador">
+                    <input type="radio" id="button-radio">
+                    <label for="button-radio">Ativo</label>
+                </div>
+            </div>
+
+            <section id="camadas-cebola">
+                <div class="camadas-form">
+                    <h3>Fatos e Dados</h3>
+                    <hr width="95%">
+
+                    <div id="caixa-nome">
+                        <label for="nome">Nome</label>
+                        <br>
+                        <input type="text" id="nome" onkeyup="validar_nome()">
+                        <p id="mensagem_nome"></p>
+                    </div>
+                    <br>
+
+                    <div id="caixas-idade-endereco">
+                        <label id="label-idade" for="idade">Idade</label>
+                        <input type="number" id="idade" onkeyup="validar_idade()" onclick="validar_idade()">
+                        
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="" id="endereco" onkeyup="validar_endereco()">
+                    </div>
+                    
+                    <div id="mensagens-idade-endereco">
+                        <p id="mensagem_idade"></p>
+                        <p id="mensagem_endereco"></p>
+                    </div>
+                    <br>
+
+                    <div id="caixas-email-senha">
+                        <label id="label-email" for="email">E-mail</label>
+                        <input type="email" id="email" onkeyup="validar_email()">
+                        <label id="label-senha" for="senha">Senha</label>
+                        <input type="password" id="senha" onkeyup="validar_senha()">
+                    </div>
+
+                    <div id="mensagens-email-senha">
+                        <p id="mensagem_email"></p>
+                        <p id="mensagem_senha"></p>
+                    </div>
+                    <br>
+
+                    <div id="caixa-outros">
+                        <label for="outros">Outras informações</label>
+                        <br>
+                        <input type="text" id="outros" onkeyup="validar_informacoes()">
+                        <p id="mensagem_outros"></p>
+                    </div>
+
+                    <h3>Interesses</h3>
+                    <hr width="95%">
+                    <textarea id="interesses" class="textareas" onkeyup="validar_textareas('interesses', 'mensagem_interesses')"></textarea>
+                    <p id="mensagem_interesses"></p>
+
+                    <h3>Sentimentos</h3>
+                    <hr width="95%">
+                    <textarea id="sentimentos" class="textareas" onkeyup="validar_textareas('sentimentos', 'mensagem_sentimentos')"></textarea>
+                    <p id="mensagem_sentimentos"></p>
+
+                    <h3>Valores</h3>
+                    <hr width="95%">
+                    <textarea id="valores" class="textareas" onkeyup="validar_textareas('valores', 'mensagem_valores')"></textarea>
+                    <p id="mensagem_valores"></p>
+                </div>
+            </section>
+
+            <div id="btn">
+                <button id="button-validador" onclick="validar_geral()" >GRAVAR</button>
+            </div>
+        
+        </section>
+    </main>
+
+    <!--Mensagem de sucesso de cadastro-->
+    <div id="alerta-background">
+        <div class="modal-conteudo">
+            <p id="mensagem-modal"></p>
+            <button id="close" onclick="fechar_modal()">
+                <span>
+                    <i class="material-symbols-outlined"> close</i>
+                </span>
+            </button>
+        </div>
+    </div>
+    <!--Mensagem de sucesso de cadastro-->
+
+    <script src="../public/javascripts/menu.js"></script>
+    <script src="../services/Services.js"></script>
+    <script src="../services/operations.js"></script>
+    <script src="../services/UIError.js"></script>
+    <script src="../public/javascripts/validacao.js"></script>
+    <script>
+        document.getElementById('button-validador').addEventListener('click', function() {
+            if (validar_geral() == true) {
+                register();
+                limpar_inputs();
+            }
+        })
+    </script>
+
+</body>
+</html>

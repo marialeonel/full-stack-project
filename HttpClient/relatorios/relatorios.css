@@ -1,0 +1,306 @@
+main {
+    height: 580px;
+    width: 84%;
+    margin-left: 22px; 
+}
+
+section#relatorio {
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.218);
+}
+
+section#relatorio > p {
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    color: rgba(8, 0, 50, 0.86);
+}
+
+section#relatorio > div > p {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color:#18013e;
+}
+
+section#relatorio > div > hr {
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+section#relatorio > div > a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::RESPONSIVIDADE::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 80px;
+        width: 85%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 30%;
+        left: 64.5%;
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 90px;
+        height: 490px;
+    }
+
+}
+
+ @media screen and (min-width:1024px) and (max-width: 1366px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 55px;
+        display: flex;
+    }
+
+    header {
+        margin-left: 100px;
+        width: 85%;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 30%;
+        left: 64.5%;
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 100px;
+        height: 480px;
+    }
+
+} 
+
+@media screen and (min-width:1366px) and (max-width: 1680px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 285px;
+        width: 71%;
+    }
+
+    header > hr#separador-header {
+        margin-left: 50px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 30%;
+        left: 64.5%;
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 285px;
+        width: 80%;
+    }
+
+    section#relatorio {
+        width: 88%;
+    }
+} 
+
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    section#cadastro > button {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    } 
+
+    header {
+        margin-left: 400px;
+        width: 70%;
+    }
+
+    header > hr#separador-header {
+        margin-left: 100px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 30%;
+        left: 64.5%;
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 70%;
+    }
+
+} 
+
+@media screen and (min-width: 1920px) {
+    button.button-mobile, nav.menu-mobile {
+        display: none;
+    }
+
+    aside.sidebar {
+        width: 240px;
+        display: flex;
+    }
+
+    aside.sidebar > img#logo-quadrado {
+        display: block;
+        height: 55px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    aside.sidebar > nav {
+        margin-top: 0;
+    }
+
+    section#relatorio > button {
+        padding: 10px 50px 10px 50px;
+        font-size: 16px;
+
+    }
+
+    .sidebar nav > a > button > span {
+        padding: 0px 16px 0 12px;
+    }
+    
+
+    .sidebar > nav > a > button > span > span {
+        display: block;
+        text-decoration: none;
+        color:black;
+        padding-left: 12px;
+    }
+
+    hr.linha{
+        border: 1px solid #736e6e4a; 
+        display: block;
+    }
+
+    header {
+        width: 64%;
+        margin-left: 400px;
+    }
+
+    header > a > span#perfil > p {
+        position: absolute;
+        top: 30%;
+        left: 64.5%;
+        color: rgba(0, 0, 0, 0.866);
+        display: flex;
+    }
+
+    header > hr#separador-header {
+        margin-left: 90px;
+    }
+
+    main {
+        margin-left: 400px;
+        width: 64%;
+    }
+} 
